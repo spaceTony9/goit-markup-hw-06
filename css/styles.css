@@ -540,21 +540,38 @@ img {
 
 /* start Footer */
 .footer {
-    padding: 100px 0;
-    height: 321px;
+    padding: 96px 16px;
     background: #2E2F42;
 }
 
-.container-footer { 
+.container-footer {
     display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .footer-container-logo {
-    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    /* margin-right: 120px; */
 }
+.footer-link  { 
+    font-family: "Raleway", sans-serif;
+    color: #4D5AE5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: block;
 
+}
 .footer-link span {
     font-family: 'Raleway', sans-serif;
     color: #F4F4FD;
@@ -566,29 +583,15 @@ img {
     text-transform: uppercase;
 }
 
-.footer-link  { 
-    font-family: "Raleway", sans-serif;
-    color: #4D5AE5;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
-}
-
 .footer-para {
     color:  #F4F4FD;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 264px;
 }
 
 .footer-container-icons {
-    margin-right: 80px;
     
 }
 
@@ -617,12 +620,13 @@ img {
 }
 
 .footer-icons-para{
-    margin-bottom: 16px;
     color: var(--WHITE, #FFF);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .footer-list-icon {
@@ -637,14 +641,10 @@ img {
 
 
 .footer-container-subscribe {
-    display: flex;
-    flex-direction: column;
 
 }
 
 .footer-container-form {
-    display: flex;
-    gap: 24px;
 }
 
 .footer-form-para {
@@ -654,6 +654,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 .footer-form-label {
 
@@ -662,14 +663,17 @@ img {
 
 .footer-form-input {
     display: block;
-    width: 264px;
+    width: 288px;
     height: 40px;
     outline: none;
+    margin-bottom: 16px;
+
     
     border-radius: 4px;
     border: 1px solid var(--WHITE, #FFF);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: transparent;
+    opacity: 0.3;
 
     color: var(--WHITE, #FFF);
     font-size: 12px;
@@ -696,6 +700,7 @@ img {
     height: 40px;
     padding: 8px 24px;
     border: none;
+    margin: 0 auto;
 
     border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
