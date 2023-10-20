@@ -1069,7 +1069,7 @@ img {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
-        padding: 96px 164px 96px 108px;
+        padding-left: 108px;
     }
     
     .footer-container-logo {
